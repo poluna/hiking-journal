@@ -1,0 +1,32 @@
+body {
+  background-image: url("../images/tatras.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* border: 5px solid red; */
+}
+
+.list {
+  background-color: rgba(243, 243, 243, 0.9);
+  /* border-radius: 10px; */
+  outline: 10px solid rgba(37, 37, 37, 0.2);
+  margin: 10px;
+  padding: 20px;
+}
+
+input[type="submit"] {
+  background-color: rgb(115, 201, 136);
+  border: none;
+  padding: 5px 10px;
+}
