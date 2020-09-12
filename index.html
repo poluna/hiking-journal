@@ -18,12 +18,6 @@
         </ul>
         <form class="add-items">
           <input type="text" name="item" placeholder="Nazwa szczytu" required />
-          <input
-            type="number"
-            name="height"
-            placeholder="Wysokość n.p.m."
-            required
-          />
           <input type="submit" value="Dodaj" />
         </form>
       </div>
@@ -52,16 +46,14 @@
           .map((item, i) => {
             return `
                     <li>
-                        <input type="checkbox" data-index=${i} id="item${i}" ${
-              item.done ? "checked" : ""
-            } />
-                        <label for="">${item.text}</label>
+                        <input type="checkbox" data-index=${i} id="item${i}" ${item.done ? "checked" : ""} />
+                        <label for="item${i}">${item.text}</label>
                     </li>
-                `;
+            `;
           })
           .join("");
       }
-
+      
       function toggleDone(e) {
         if (!e.target.matches("input")) return;
         const element = e.target;
