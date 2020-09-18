@@ -1,13 +1,13 @@
 const mountains = [
-  { text: "Śnieżka", height: "1602", done: "true" },
-  { text: "Kasprowy Wierch", height: "1987", done: "true" },
-  { text: "Kopa Kondracka", height: "2005", done: "true" },
-  { text: "Małołączniak", height: "2096", done: "true" },
-  { text: "Krzesanica", height: "2122", done: "true" },
-  { text: "Świnica", height: "2301", done: "true" },
-  { text: "Szrenica", height: "1362", done: "true" },
-  { text: "Krzesanica", height: "2122", done: "true" },
-  { text: "Tarnica", height: "1346", done: "true" },
+  { text: "Śnieżka", height: "1602", done: true },
+  { text: "Kasprowy Wierch", height: "1987", done: true},
+  { text: "Kopa Kondracka", height: "2005", done: true },
+  { text: "Małołączniak", height: "2096", done: true },
+  { text: "Rysy", height: "2499", done: false },
+  { text: "Świnica", height: "2301", done: true },
+  { text: "Szrenica", height: "1362", done: true },
+  { text: "Giewont", height: "1894", done: false },
+  { text: "Tarnica", height: "1346", done: true },
 ];
 
 const addItems = document.querySelector(".add-items");
@@ -34,9 +34,7 @@ function populateList(list = [], place) {
     .map((item, i) => {
       return `
               <li>
-                  <input type="checkbox" data-index=${i} id="item${i}" ${
-        item.done ? "checked" : ""
-      } />
+                  <input type="checkbox" data-index=${i} id="item${i}" ${item.done ? "checked" : ""} />
                   <label for="item${i}">${item.text}</label>
                   <span class="height"> — ${item.height} m n.p.m.</span>
               </li>
