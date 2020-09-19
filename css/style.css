@@ -82,7 +82,7 @@ input[type='submit'] {
 } */
 
 .notes {
-  background: rgba(120, 200, 255, 0.95);
+  background: rgba(80, 160, 100, 0.95);
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
   margin: 10px;
   padding: 20px;
@@ -96,4 +96,16 @@ input[type='submit'] {
   flex-grow: 1;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   padding: 7px;
+}
+
+.counter-panel {
+  background: rgba(80, 160, 100, 0.95);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+  padding: 20px;
+}
+
+.counter-panel p {
+  font-size: 3em;
+  margin: 10px;
 }
