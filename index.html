@@ -9,6 +9,7 @@
 
   <body>
     <h1>Górskie przygody</h1>
+    <!-- <img src="./images/logo.png" alt="logo" class="logo"/> -->
     <div class="container">
       <div class="list">
         <h2>Zdobyte szczyty</h2>
@@ -18,22 +19,29 @@
         </ul>
         <form class="add-items">
           <input type="text" name="item" placeholder="Nazwa szczytu" required />
-          <input type="number" name="height" placeholder="Wysokość n.p.m." required>
+          <input
+            type="number"
+            name="height"
+            placeholder="Wysokość n.p.m."
+            required
+          />
           <input type="submit" value="Dodaj" />
         </form>
       </div>
-      <div class="notes">
-        <h2>Zdobyte odznaki</h2>
-        <textarea id="badges"></textarea>
+      <div class="side-bar">
+        <div class="counter-panel">
+          <h2>Korona Gór Polski</h2>
+          <p id="counter">Counting peaks...</p>
+        </div>
+        <div class="notes">
+          <h2>Zdobyte odznaki</h2>
+          <textarea id="badges"></textarea>
+        </div>
+        <div class="notes">
+          <h2>Miejsca do odwiedzenia</h2>
+          <textarea id="places"></textarea>
+        </div>
       </div>
-      <div class="notes">
-        <h2>Miejsca do odwiedzenia</h2>
-        <textarea id="places"></textarea>
-      </div>
-    </div>
-    <div class="counter-panel">
-      <h2>Korona Gór Polski</h2>
-      <p id="counter">Counting peaks...</p>
     </div>
 
     <script src="./js/script.js"></script>

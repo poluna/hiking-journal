@@ -9,6 +9,8 @@ const mountains = [
   { text: "Giewont", height: "1894", done: false },
   { text: "Tarnica", height: "1346", done: true },
   { text: "Śnieżnik", height: "1423", done: true },
+  { text: "Chełmiec", height: "851", done: true },
+  { text: "Turbacz", height: "1310", done: true },
 ];
 
 const addItems = document.querySelector(".add-items");

@@ -1,7 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
 
 html {
   background: url("../images/tatras.jpg") center no-repeat;
@@ -13,19 +11,30 @@ html {
   text-align: center;
 }
 
+/* .logo {
+  width: 100px;
+  height: 100px;
+} */
+
 h1 {
   text-transform: uppercase;
   font-weight: 200;
   font-size: 3.5em;
   /* font-family: 'Major Mono Display', monospace; */
-  font-family: 'Cabin Sketch', cursive;
+  font-family: "Cabin Sketch", cursive;
+}
+
+h2 {
+  margin: 5px;
 }
 
 .container {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
   /* border: 5px solid red; */
+  margin: 0 5% 0 5%;
 }
 
 .list {
@@ -81,13 +90,26 @@ input[type='submit'] {
     padding: 5px 10px;
 } */
 
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid blue; */
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 600px;
+  gap: 10px;
+}
+
 .notes {
-  background: rgba(80, 160, 100, 0.95);
+  background: rgba(80, 160, 100, 0.7);
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
   margin: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  min-height: 200px;
+  /* max-width: 200px; */
 }
 
 .notes textarea {
@@ -99,7 +121,10 @@ input[type='submit'] {
 }
 
 .counter-panel {
-  background: rgba(80, 160, 100, 0.95);
+  /* background: rgba(80, 160, 100, 0.95); */
+  background-image: url("../images/mountains.png");
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
   margin: 10px;
   padding: 20px;

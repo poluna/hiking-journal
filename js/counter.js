@@ -30,10 +30,18 @@ const peaks = [
 ];
 
 const counter = document.querySelector("#counter");
-let peaksConquered = JSON.parse(localStorage.getItem("items"));
 
-peaksConquered = peaksConquered.filter(peak => {
+function updatePeaks() {
+  let peaksConquered = JSON.parse(localStorage.getItem("items"));
+
+  peaksConquered = peaksConquered.filter((peak) => {
     return peak.done == true && peaks.includes(peak.text);
-});
+  });
 
-counter.innerHTML = `${peaksConquered.length} z 28`;
+  counter.innerHTML = `${peaksConquered.length} z 28`;
+}
+
+updatePeaks();
+
+const peaksList = document.querySelector(".items");
+peaksList.addEventListener("click", updatePeaks);
