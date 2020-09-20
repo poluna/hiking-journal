@@ -11,10 +11,16 @@ html {
   text-align: center;
 }
 
-/* .logo {
-  width: 100px;
-  height: 100px;
-} */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 3.7em;
+  padding: 10px;
+}
 
 h1 {
   text-transform: uppercase;
