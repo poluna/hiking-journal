@@ -133,6 +133,7 @@ input[type='submit'] {
 .ribbon {
   width: 100%;
   max-width: 330px;
+  padding-bottom: 5px;
 }
 
 .notes textarea {
